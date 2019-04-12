@@ -1,0 +1,225 @@
+@import 'iconfont/icon.css';
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 25px;
+}
+body {
+  overflow-x: hidden;
+}
+.overflow-x {
+  overflow-x: hidden;
+}
+.col-1 {
+  float: left;
+  width: 2.5rem;
+}
+.col-2 {
+  float: left;
+  width: 5rem;
+}
+.col-3 {
+  float: left;
+  width: 7.5rem;
+}
+.col-4 {
+  float: left;
+  width: 10rem;
+}
+.col-5 {
+  float: left;
+  width: 12.5rem;
+}
+.col-6 {
+  float: left;
+  width: 15rem;
+}
+.col-7 {
+  float: left;
+  width: 17.5rem;
+}
+.col-8 {
+  float: left;
+  width: 20rem;
+}
+.col-9 {
+  float: left;
+  width: 22.5rem;
+}
+.col-10 {
+  float: left;
+  width: 25rem;
+}
+.col-11 {
+  float: left;
+  width: 27.5rem;
+}
+.col-12 {
+  float: left;
+  width: 30rem;
+}
+.gep-1 {
+  margin-left: 2.5rem;
+}
+.gep-2 {
+  margin-left: 5rem;
+}
+.gep-3 {
+  margin-left: 7.5rem;
+}
+.gep-4 {
+  margin-left: 10rem;
+}
+.gep-5 {
+  margin-left: 12.5rem;
+}
+.gep-6 {
+  margin-left: 15rem;
+}
+.gep-7 {
+  margin-left: 17.5rem;
+}
+.gep-8 {
+  margin-left: 20rem;
+}
+.gep-9 {
+  margin-left: 22.5rem;
+}
+.gep-10 {
+  margin-left: 25rem;
+}
+.gep-11 {
+  margin-left: 27.5rem;
+}
+.gep-12 {
+  margin-left: 30rem;
+}
+.after:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.row:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.position-r {
+  position: relative;
+}
+.position-a {
+  position: absolute;
+}
+.border {
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+.border-radius {
+  border-radius: 5px;
+}
+.box-shadow {
+  box-shadow: 1px 1px 2px #000;
+}
+.box-shadow-inset {
+  box-shadow: -1px -1px 2px #000 inset;
+}
+.linear-0 {
+  background-image: linear-gradient(0deg, #f00 0%, #0f0 50%, #00f 100%);
+}
+.linear-45 {
+  background-image: linear-gradient(45deg, #f00 0%, #0f0 50%, #00f 100%);
+}
+.linear-90 {
+  background-image: linear-gradient(90deg, #f00 0%, #0f0 50%, #00f 100%);
+}
+.linear-135 {
+  background-image: linear-gradient(135deg, #f00 0%, #0f0 50%, #00f 100%);
+}
+.linear-180 {
+  background-image: linear-gradient(180deg, #f00 0%, #0f0 50%, #00f 100%);
+}
+.radial-0-0 {
+  background: radial-gradient(0% 0%, farthest-corner, #f00 0%, #ff0 50%, #000 100%);
+}
+.radial-100-0 {
+  background: radial-gradient(100% 0%, farthest-corner, #f00 0%, #ff0 50%, #000 100%);
+}
+.radial-100-100 {
+  background: radial-gradient(100% 100%, farthest-corner, #f00 0%, #ff0 50%, #000 100%);
+}
+.radial-0-100 {
+  background: radial-gradient(0% 100%, farthest-corner, #f00 0%, #ff0 50%, #000 100%);
+}
+.radial-50-50 {
+  background: radial-gradient(50% 50%, farthest-corner, #f00 0%, #ff0 50%, #000 100%);
+}
+/* flex的水平布局 */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* flex的垂直布局 */
+.flex-column {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4;
+}
+.flex-5 {
+  flex: 5;
+}
+.flex-6 {
+  flex: 6;
+}
+.flex-7 {
+  flex: 7;
+}
+.flex-8 {
+  flex: 8;
+}
+.flex-9 {
+  flex: 9;
+}
+.flex-10 {
+  flex: 10;
+}
+.table {
+  display: table;
+  width: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.width {
+  width: 10rem;
+}
+.height {
+  height: 10rem;
+}
+/* 元素水平垂直居中 */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

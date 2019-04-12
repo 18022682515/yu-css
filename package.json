@@ -1,0 +1,19 @@
+{
+  "name": "yu-css",
+  "version": "1.0.1",
+  "description": "css封装",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "邓小宇",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18022682515/yu-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/18022682515/yu-css/issues"
+  },
+  "homepage": "https://github.com/18022682515/yu-css#readme"
+}
