@@ -3088,6 +3088,9 @@
   height: 0;
   clear: both;
 }
+.row > * {
+  box-sizing: border-box;
+}
 .col-1 {
   float: left;
   width: 2.5rem;

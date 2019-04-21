@@ -39,6 +39,9 @@
 //一行，清除浮动
 .row{
     .after();
+    &>*{
+        box-sizing: border-box;
+    }
 }
 //列宽
 .col-for(1,12);
