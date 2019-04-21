@@ -3210,24 +3210,24 @@
   background-image: linear-gradient(180deg, #f00,#0f0,#00f);
 }
 .radial-0-0 {
-  background-image: radial-gradient(0% 0%, farthest-corner, #f00,#0f0,#00f);
-  background-image: -webkit-radial-gradient(0% 0%, farthest-corner, #f00,#0f0,#00f);
+  background-image: radial-gradient(farthest-corner at 0% 0%, #f00,#0f0,#00f);
+  background-image: -webkit-radial-gradient(farthest-corner at 0% 0%, #f00,#0f0,#00f);
 }
 .radial-100-0 {
-  background-image: radial-gradient(100% 0%, farthest-corner, #f00,#0f0,#00f);
-  background-image: -webkit-radial-gradient(100% 0%, farthest-corner, #f00,#0f0,#00f);
+  background-image: radial-gradient(farthest-corner at 100% 0%, #f00,#0f0,#00f);
+  background-image: -webkit-radial-gradient(farthest-corner at 100% 0%, #f00,#0f0,#00f);
 }
 .radial-100-100 {
-  background-image: radial-gradient(100% 100%, farthest-corner, #f00,#0f0,#00f);
-  background-image: -webkit-radial-gradient(100% 100%, farthest-corner, #f00,#0f0,#00f);
+  background-image: radial-gradient(farthest-corner at 100% 100%, #f00,#0f0,#00f);
+  background-image: -webkit-radial-gradient(farthest-corner at 100% 100%, #f00,#0f0,#00f);
 }
 .radial-0-100 {
-  background-image: radial-gradient(0% 100%, farthest-corner, #f00,#0f0,#00f);
-  background-image: -webkit-radial-gradient(0% 100%, farthest-corner, #f00,#0f0,#00f);
+  background-image: radial-gradient(farthest-corner at 0% 100%, #f00,#0f0,#00f);
+  background-image: -webkit-radial-gradient(farthest-corner at 0% 100%, #f00,#0f0,#00f);
 }
 .radial-50-50 {
-  background-image: radial-gradient(50% 50%, farthest-corner, #f00,#0f0,#00f);
-  background-image: -webkit-radial-gradient(50% 50%, farthest-corner, #f00,#0f0,#00f);
+  background-image: radial-gradient(farthest-corner at 50% 50%, #f00,#0f0,#00f);
+  background-image: -webkit-radial-gradient(farthest-corner at 50% 50%, #f00,#0f0,#00f);
 }
 /* flex的水平布局 */
 .flex-row {

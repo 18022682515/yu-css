@@ -35,8 +35,8 @@
         @corner:farthest-corner;
     }
     .corner(@n);
-    background-image: radial-gradient(@x @y,@corner,@rest);
-    background-image: -webkit-radial-gradient(@x @y,@corner,@rest);
+    background-image: radial-gradient(@corner at @x @y,@rest);
+    background-image: -webkit-radial-gradient(@corner at @x @y,@rest);
 }
 
 //设置flex布局的列宽
