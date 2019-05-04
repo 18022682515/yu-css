@@ -1,17 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'iconfont';
-  src: url('./public/iconfont/iconfont.eot');
-  src: url('./public/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('./public/iconfont/iconfont.woff') format('woff'), url('./public/iconfont/iconfont.ttf') format('truetype'), url('./public/iconfont/iconfont.svg#iconfont') format('svg');
-}
-.icon {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -3061,6 +3048,19 @@
     transition: none !important;
   }
 }
+@font-face {
+  font-family: 'iconfont';
+  src: url('./public/iconfont/iconfont.eot');
+  src: url('./public/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('./public/iconfont/iconfont.woff') format('woff'), url('./public/iconfont/iconfont.ttf') format('truetype'), url('./public/iconfont/iconfont.svg#iconfont') format('svg');
+}
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 0.50420168rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 .none-select {
   user-select: none;
 }
@@ -3274,6 +3274,9 @@
 .flex-10 {
   flex: 10;
 }
+.block {
+  display: block;
+}
 .table {
   display: table;
 }
@@ -3291,13 +3294,154 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.fixed-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .btn {
   display: inline-block;
-  padding: 0.08rem 0.16rem;
-  border-radius: 0.2rem;
+  color: #000;
+  padding: 0.1512605rem 0.20168067rem;
+  border-radius: 0.25210084rem;
   background: #fff;
   outline: none;
+  box-shadow: 1px 1px 2px 1px #000;
+  border: 1px solid rgba(0, 0, 0, 0.4);
 }
 .btn:hover {
-  background: rgba(188, 188, 188, 0.2);
+  opacity: 0.9;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.9;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 95%;
+}
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+p,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tfoot,
+thead,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+body,
+input,
+button {
+  font-size: 0.35294118rem;
+}
+html {
+  font-size: 39.66666667px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 25px;
+  }
+}
+body {
+  user-select: none;
+  overflow-x: hidden;
+}
+img,
+input,
+select {
+  vertical-align: middle;
+  outline: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  padding-left: 0.20168067rem;
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }

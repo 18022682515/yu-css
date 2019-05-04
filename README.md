@@ -156,7 +156,7 @@ require('yu-css'); //或import 'yu-css';
 .radial-50-50  //渐变中心点在最中间
 ```
 
-**图标** [点击查看：图标码](https://18022682515.github.io/yu-css/iconPage/)
+**图标** [点击查看：图标码](https://18022682515.github.io/yu-css/public/iconPage/)
 ```
 .icon 
 
