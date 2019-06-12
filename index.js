@@ -1,4 +1,4 @@
-require('./index.css');
+require('./less/yu.less');
 
 function setHtmlFontSize(){
     var html_width = document.documentElement.clientWidth;

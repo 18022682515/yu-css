@@ -1,14 +1,17 @@
-@width:30/12rem;
+@import './lib/animate';
+@import './lib/icon';
+@import './fn';
+@import './lib/reset';
 
 .none-select{
   user-select:none;
 }
-//水平溢出隐藏
+/* 水平溢出隐藏 */
 .overflow-x{
     overflow-x: hidden;
 }
 
-// 元素内最后增加一个元素
+/* 元素内最后增加一个元素 */
 .after{
     &:after{
         content:""; 
@@ -19,7 +22,7 @@
     }
 }
 
-// 元素内最前面增加一个元素
+/* 元素内最前面增加一个元素 */
 .before{
     &:before{
         content:""; 
@@ -30,17 +33,17 @@
     }
 }
 
-//12格栅格布局
-//一行，清除浮动
+/* 12格栅格布局 */
+/* 一行，清除浮动 */
 .row{
     .after();
     &>*{
         box-sizing: border-box;
     }
 }
-//列宽
+/* 列宽 */
 .col-for(1,12);
-//列间距
+/* 列间距 */
 .gap-for(1,12);
 
 .position-r{
@@ -53,20 +56,20 @@
     box-sizing: border-box;
     border:1px solid #000;
 }
-// 圆角
+/* 圆角 */
 .border-radius{
     border-radius:5px;
 }
-//外阴影
+/* 外阴影 */
 .box-shadow{
     box-shadow:1px 1px 2px #000;
 }
-//内阴影
+/* 内阴影 */
 .box-shadow-inset{
     box-shadow:-1px -1px 2px #000 inset;
 }
 
-//线性渐变
+/* 线性渐变 */
 .linear-0{
     .linear(0deg,~'#f00,#0f0,#00f');
 }
@@ -117,26 +120,19 @@
     justify-content:center;
 }
 
-//flex的列宽
+/* flex的列宽 */
 .flex-for(1,10);
 
 .block{
     display:block;
 }
 
-//文本垂直居中
-.table{
-    display:table;
-}
-.table-cell{
-    display:table-cell; 
-    vertical-align:middle;
-}
 
-//文本水平居中
+/* 文本水平居中 */
 .text-center{
   text-align: center;
 }
+
 
 /* 元素水平垂直居中 */
 .center{
@@ -157,20 +153,61 @@
   color:#000;
   padding:6/@rem 8/@rem;
   border-radius: 10/@rem;
-  background:#fff;
+  background:rgba(231, 243, 204, 0.151);
   outline: none;
-  box-shadow: 1px 1px 2px 1px #000;
-  border:1px solid rgba(0,0,0,.4);
+  /* box-shadow: 1px 1px 2px 1px #000; */
+  border:1px solid rgba(0,0,0,.6);
 
   &:hover{
     opacity:0.9;
-    box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,.4);
+    background:rgba(27, 24, 24, 0.192);
+    /* box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,.4); */
   }
 }
 
 .disabled{
     pointer-events:none;
     opacity:0.9;
+    background:rgba(27, 24, 24, 0.192);
     box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,.4);
     font-size:95%;
+}
+
+/* 文本垂直居中 */
+.table-middle{
+    display:table;
+    width:100%;
+    /* height:100%; */
+    &>*{
+        display:table-cell; 
+        vertical-align:middle;
+    }
+}
+
+/* 文本垂直居中 */
+.middle{   
+    /* height:100%; */
+    &>*{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:after{
+        content:'';
+        display:inline-block;
+        height:100%;
+        vertical-align: middle;
+    }
+}
+
+/* 文字两端对齐 */
+.justify{   
+    padding:0 10/@rem;
+    text-align: justify;
+    height:40/@rem;
+    line-height:40/@rem;
+    &:after{
+        content:'';
+        display:inline-block;
+        width:100%;
+    }
 }
